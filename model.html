@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缪语博的主页</title>
+    <style>
+        body {
+            background-image: url('https://amlhdsan.github.io/share/background.jpg');
+            background-size: cover;
+            font-family: 'SimSun', 'Consolas', sans-serif;
+            color: black;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 36px;
+        }
+        .intro {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            margin: 20px 0;
+        }
+        .button {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            padding: 15px 30px;
+            text-align: center;
+            transition: background 0.4s, transform 0.3s ease-in-out;
+            font-family: 'Consolas', sans-serif;
+            cursor: pointer;
+            backdrop-filter: blur(20px);
+            font-size: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .button:hover {
+            background: rgba(255, 255, 255, 0.8);
+            transform: scale(1.1);
+        }
+
+        .contact-section, .site-section {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin: 20px 0;
+            align-items: center;
+        }
+
+        .contact-item, .site-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item div, .site-item div {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 15px;
+            margin: 5px 0;
+            transition: background 0.4s, transform 0.3s ease-in-out, backdrop-filter 0.4s;
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+        }
+
+        .contact-item div:hover, .site-item div:hover {
+            background: rgba(255, 255, 255, 0.9); /* 背景更“实” */
+            transform: scale(1.1); /* 悬停时放大效果 */
+            backdrop-filter: blur(20px); /* 增强毛玻璃效果 */
+        }
+
+        .link {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* 手机端优化 */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 10px;
+                height: auto;
+            }
+            h1 {
+                font-size: 28px;
+                margin-top: 20px;
+            }
+            .intro {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+            .button-container {
+                flex-direction: column;
+                width: 100%;
+            }
+            .button {
+                width: 80%;
+                margin: 10px 0;
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+            .contact-section, .site-section {
+                flex-direction: column;
+                width: 100%;
+                margin: 10px 0;
+            }
+            .contact-item, .site-item {
+                align-items: flex-start;
+                width: 100%;
+                gap: 5px;
+            }
+            .contact-item div, .site-item div {
+                width: 100%;
+                padding: 8px 10px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>缪语博的主页</h1>
+    <div class="intro">Hello! 我是缪语博，一个铜陵市第一中学的高一菜鸡。</div>
+
+    <div class="button-container">
+        <a href="https://amlhdsan.github.io/share/index.html" class="button">我的分享站</a>
+        <a href="https://amlhdsan.github.io/articles/index.html" class="button">我的Blog</a>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-item">我的联系方式</div>
+        <div class="contact-item">
+            <div>e-mail: <a href="mailto:amlhdsan@gmail.com" class="link">amlhdsan@gmail.com</a></div>
+            <div>QQ：3698974141</div>
+        </div>
+    </div>
+
+    <div class="site-section">
+        <div class="site-item">我的各站</div>
+        <div class="site-item">
+            <div><a href="https://x.com/myb_AMlhd" class="link">X：@myb_AMlhd</a></div>
+            <div><a href="https://space.bilibili.com/1197495893" class="link">Bilibili：@缪语博</a></div>
+            <div><a href="https://blog.csdn.net/MYB20091111" class="link">CSDN：@缪语博</a></div>
+            <div><a href="https://www.zhihu.com/people/50-15-97-52-51" class="link">知乎：@缪语博</a></div>
+            <div><a href="https://github.com/AMlhdSan" class="link">Github：@AMlhdSan</a></div>
+        </div>
+    </div>
+
+</body>
+</html>
